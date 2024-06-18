@@ -18,6 +18,8 @@ public class Shooting : MonoBehaviour // 컴포넌트처럼 쓸것은 모노비�
 
     private void Start()
     {
+        Debug.Log("업데이트");
+
         controller.OnAttackEvent += OnShoot; // 컨트롤러에서 온어택이벤트 등록. 온슛 함수만들기
 
         controller.OnLookEvent += OnAim; // 컨트롤러에 온룩이벤트 등록. 온에임 함수만들기

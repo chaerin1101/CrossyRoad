@@ -9,6 +9,8 @@ public class PlayerInputController : Controller
     {
         base.Awake();
         camera = Camera.main; // 메인카메라에 태그 붙어있는 카메라를 가져온다
+
+        Debug.Log("업데이트");
     }
 
     // Controller로 가기전에 전처리 작업을 하는 곳
@@ -18,7 +20,6 @@ public class PlayerInputController : Controller
         Vector2 moveInput = value.Get<Vector2>().normalized;
         CallMoveEvent(moveInput);
         // ↑ 실제 움직이는 처리는 PlayerMovement에서 함
-        Debug.Log("ad");
     }
 
     public void OnLook(InputValue value)

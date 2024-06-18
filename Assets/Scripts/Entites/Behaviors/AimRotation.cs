@@ -17,7 +17,6 @@ public class AimRotation : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("ad");
         controller.OnLookEvent += OnAim; // OnLookEvent에 OnAim을 등록
     }
 
