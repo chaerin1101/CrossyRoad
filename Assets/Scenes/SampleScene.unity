@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 193939866}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 1062105991}
   - component: {fileID: 1062105988}
   - component: {fileID: 1062105992}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -426,9 +426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af73bb3337ebe59489b64714578fc749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  armRenderer: {fileID: 1403398340}
-  armPivot: {fileID: 193939866}
-  characterRenderer: {fileID: 1469017095}
 --- !u!114 &1062105991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -459,7 +456,7 @@ MonoBehaviour:
     statsChangeType: 2
     maxHealth: 10
     speed: 5
-    attackSO: {fileID: 0}
+    attackSO: {fileID: 11400000, guid: 1926a5e93c6dc6d4f8f6ee16a0133bdd, type: 2}
   statModifiers: []
 --- !u!1 &1124386039
 GameObject:
@@ -473,7 +470,7 @@ GameObject:
   - component: {fileID: 1124386042}
   - component: {fileID: 1124386041}
   - component: {fileID: 1124386043}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1256,7 +1253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1403398339}
   - component: {fileID: 1403398340}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1340,7 +1337,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1469017094}
   - component: {fileID: 1469017095}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1425,7 +1422,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566389742}
   - component: {fileID: 1566389741}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1473,7 +1470,7 @@ GameObject:
   - component: {fileID: 1952810519}
   - component: {fileID: 1952810521}
   - component: {fileID: 1952810520}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3447,7 +3444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2040964236}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3480,7 +3477,7 @@ GameObject:
   - component: {fileID: 2066927573}
   - component: {fileID: 2066927575}
   - component: {fileID: 2066927574}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FloorDeco
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -18,6 +18,7 @@ public class PlayerInputController : Controller
         Vector2 moveInput = value.Get<Vector2>().normalized;
         CallMoveEvent(moveInput);
         // ↑ 실제 움직이는 처리는 PlayerMovement에서 함
+        Debug.Log("ad");
     }
 
     public void OnLook(InputValue value)

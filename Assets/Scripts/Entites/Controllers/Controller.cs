@@ -15,7 +15,7 @@ public class Controller : MonoBehaviour // OnMoveEvent¿Í OnLookEvent¸¦ È£ÃâÇØÁÖ´
 
     public event Action<Vector2> OnMoveEvent; // ActionÀº ¹«Á¶°Ç void¸¸ ¹ÝÈ¯. ¾Æ´Ï¸é Func
     public event Action<Vector2> OnLookEvent;
-    public event Action OnAttackEvent;
+    public event Action<AttackSO> OnAttackEvent;
 
     protected bool IsAttacking { get; set; } // »ó¼Ó¹Þ´Â Å¬·¡½º¿¡¼­¸¸ ÀÛ¾÷ °¡´ÉÇÏµµ·Ï protected
     // OnFire¸¦ ÇßÀ»¶§ true / false·Î ¹Ù²î´Â°Í
@@ -48,7 +48,7 @@ public class Controller : MonoBehaviour // OnMoveEvent¿Í OnLookEvent¸¦ È£ÃâÇØÁÖ´
             // stats.CurrentStat.attackSO.delay ÀÌ»óÀÌ¸é IsAttackingÀ¸·Î ´©¸£°í ÀÖ´Ù´Â°É È®ÀÎ.
         {
             timeSinceLastAttack = 0f; // 0.2f°¡ ³Ñ¾ú´Ù´Â °Å´Ï±î ´Ù½Ã 0f·Î ¸¸µé¾îÁÖ°í
-            CallAttackEvent(); // ±× ´ÙÀ½¿¡ CallAttackEvent È£ÃâÇÏ±â
+            CallAttackEvent(stats.CurrentStat.attackSO); // ±× ´ÙÀ½¿¡ CallAttackEvent È£ÃâÇÏ±â
         }
     }
 
@@ -62,8 +62,8 @@ public class Controller : MonoBehaviour // OnMoveEvent¿Í OnLookEvent¸¦ È£ÃâÇØÁÖ´
         OnLookEvent?.Invoke(direction);
     }
 
-    public void CallAttackEvent()
+    public void CallAttackEvent(AttackSO attackSO)
     {
-        OnAttackEvent?.Invoke();
+        OnAttackEvent?.Invoke(attackSO);
     }
 }

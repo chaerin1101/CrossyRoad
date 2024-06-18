@@ -23,6 +23,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
+        Debug.Log("ad");
         controller.OnMoveEvent += Move;
         // OnMove할때 발생할 수 있는 다양한 Event. 여기에 다양한 컴포넌트를 추가한다음
         // Controller에 있는 Invoke만 하면 되기때문에 훨씬 더 편하다.
